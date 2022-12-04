@@ -1,14 +1,28 @@
-.btn-bd-primary {
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: var(--bd-violet);
-    --bs-btn-border-color: var(--bd-violet);
-    --bs-btn-border-radius: .5rem;
-    --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
-    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-    --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
-    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+/*"Coding Quiz" title div*/
+h1 {
+    font-family:'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+/*Question div*/
+h2 {
+    font-family:'Raleway', sans-serif;
+}
+
+/*Buttons*/
+.btn {
+    margin: 10px;
+    background-color: #D7BDE2 ;
+    border: 3px solid #D7BDE2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Next, back, review buttons*/
+.btn2 {
+    border-radius: 5px;
+    border-color: #BDC3C7;
+    background-color:#BDC3C7;
+    color: white;
+    display: inline-block;
+    margin: 15px;
 }
