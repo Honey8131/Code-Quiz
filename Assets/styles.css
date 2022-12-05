@@ -1,8 +1,37 @@
+body {
+    padding:30px;
+}
+
 /*"Coding Quiz" title div*/
 h1 {
     font-family:'Raleway', sans-serif;
     font-weight: bold;
 }
+
+/*Holds Question header, answer buttons, and navigation buttons*/
+.container {
+    margin-top: 50px;
+    width: 50%;
+}
+/*See high scores*/
+.topnav {
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #D7BDE2;
+}
+
+.topnav ul {
+    list-style: none;
+}
+.topnav a {
+    color: #D7BDE2;
+    text-decoration: none;
+}
+.topnav:hover {
+    background-color: #D4EFDF;
+}
+
 
 /*Question div*/
 h2 {
@@ -17,12 +46,23 @@ h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.btn:hover {
+    background-color:#D4EFDF ;
+    border-color: #BDC3C7;
+}
+
+
 /*Next, back, review buttons*/
 .btn2 {
-    border-radius: 5px;
+    border-radius: 25px;
     border-color: #BDC3C7;
     background-color:#BDC3C7;
     color: white;
-    display: inline-block;
+    display: inline;
     margin: 15px;
+}
+
+.btn2:hover {
+    background-color: #D4EFDF;
+    border-color: #BDC3C7;
 }
