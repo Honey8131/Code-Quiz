@@ -1,68 +1,182 @@
-body {
+:root{
+    --lavendar: #D7BDE2;
+    --light-green:#D4EFDF;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
     padding:30px;
+    font-family: 'Raleway', sans-serif;
 }
 
-/*"Coding Quiz" title div*/
-h1 {
-    font-family:'Raleway', sans-serif;
-    font-weight: bold;
+body {
+    background: white;
 }
 
-/*Holds Question header, answer buttons, and navigation buttons*/
-.container {
-    margin-top: 50px;
+.hide{
+    display: none;
+}
+
+.start{
+    display: block;
+}
+
+.title {
+    border-bottom: 1px solid lightgray;
+}
+
+.info-box {
+    width: 540px;
+    background: var(--lavendar);
+    border-radius: 5px;
+}
+
+.info-box .info-title {
+    height: 60px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 1000;
+    padding: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.info-box .info-list {
+    padding: 15px 35px;
+}
+
+.info-box .info-list .info {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.info-box .info-list .info span{
+    font-weight: 1000;
+    color: black;
+}
+
+.quiz-box {
+    width: 540px;
+    background: grey;
+    border-radius: 5px;
+}
+
+.que-text {
+    border-top: 1px solid lightgray;
+}
+
+#timeRem {
+    margin-top: 5;
+}
+
+#start-btn {
+    width: 50%;
+    background-color: var(--lavendar);
+    border-color: var(--light-green);
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+#start-btn:hover{
+    background: var(--lavendar);
+    color: black;
+}
+
+.info-box .buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid lightgray;
+}
+
+.info-box .buttons button {
+    margin: 0 px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid var(--light-green);
+    background: var(--light-green);
+    border-radius: 7px;
+    color: black;
+    font-size: 16px;
+    font-weight: 1000px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button.quit {
+    border-color: var(--lavendar);
+    background-color: grey;
+    color: black;
+}
+
+.buttons button.restart {
+    color: black;
+    background: lavender;
+}
+
+.buttons button.quit:hover {
+    color: var(--light-green);
+    background: grey;
+}
+
+.buttons button.restart:hover {
+    color: black;
+    background: grey;
+}
+
+.question {
+    border-bottom: 1px solid lightgray;
+}
+
+.option {
+    border: solid var(--lavendar);
+    margin: 5px;
+    background: var(--light-green);
+    color: black;
+    border-radius: 5px;
+}
+
+.option:hover {
+    background: var(--lavendar);
+    cursor: pointer;
+}
+
+#initials, #saveScore {
+    width: 100px;
+}
+
+#response {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    border-top: 1px solid lightgray;
+}
+
+#saveScore {
+    border-color: var(--lavendar);
+    background: grey;
+    color: var(--lavendar);
     width: 50%;
 }
-/*See high scores*/
-.topnav {
-    float: right;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    color: #D7BDE2;
+
+#saveScore:hover {
+    background: var(--lavendar);
+    color: black;
 }
 
-.topnav ul {
-    list-style: none;
+.buttons {
+    justify-content: center;
 }
-.topnav a {
-    color: #D7BDE2;
+
+.buttons a {
+    color: black;
     text-decoration: none;
-}
-.topnav:hover {
-    background-color: #D4EFDF;
-}
-
-
-/*Question div*/
-h2 {
-    font-family:'Raleway', sans-serif;
-}
-
-/*Buttons*/
-.btn {
-    margin: 10px;
-    background-color: #D7BDE2 ;
-    border: 3px solid #D7BDE2;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.btn:hover {
-    background-color:#D4EFDF ;
-    border-color: #BDC3C7;
-}
-
-
-/*Next, back, review buttons*/
-.btn2 {
-    border-radius: 25px;
-    border-color: #BDC3C7;
-    background-color:#BDC3C7;
-    color: white;
-    display: inline;
-    margin: 15px;
-}
-
-.btn2:hover {
-    background-color: #D4EFDF;
-    border-color: #BDC3C7;
 }

@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>High Scores</title>
-    <link rel="stylesheet" href="assets/css/style.css"/>
-    <!-- Bootstap Link-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="/Assets/css/style.css" />
+    <!-- Link to Google Fonts custom "Raleway"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-  rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-  crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-/>
-</head>
-<body>
-    <h1>High Scores</h1>
-    <ul>
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap"
+      rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  </head>
 
-    </ul>
-    <a href="index.html">Go Back</a>
-    <div class="text-center mt-4">
-        <button class="btn btn-primary" id="submit-button">Submit</button>
+
+<body>
+
+    <Header>Coding Quiz<a href="/index.html" class="homepage float-end">Home</a></Header>
+
+    <div id="rules" class="high-scores-box mt-5" style="width: auto">
+      <h1>High Scores:</h1>
+      <div id="high-scores">
+
       </div>
-    <script src="/Assets/js/quiz.js"></script>
+    </div>
+    <script src="/Assets/js/highscores.js"></script>
 </body>
 </html>
