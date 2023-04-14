@@ -10,7 +10,7 @@
   ### [Questions](#questions)
 
   ## Installation:
-  ### Open the deployed web application
+  ### Open the deployed web application at https://honey8131.github.io/Code-Quiz/
 
   ## Description:
   ### This is a timed quiz on JavaScript fundamentals that stores high scores. Time is deducted if a score is answered incorrectly. It runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code.
